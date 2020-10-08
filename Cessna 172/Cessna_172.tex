@@ -1,0 +1,269 @@
+\documentclass{article}
+\usepackage[margin=0.1in]{geometry}
+\usepackage[explicit]{titlesec}
+\usepackage{xcolor}
+\usepackage{multicol}
+
+\definecolor{Red}{rgb}{1,0,0}
+\definecolor{Black}{rgb}{0,0,0}
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{}{0em}{\colorbox{black}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\textcolor{white}{\thesection\quad#1}}}\vspace{-1em}}
+\titleformat{name=\section,numberless}
+{\normalfont\normalsize\bfseries}{}{0em}{\colorbox{black}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\textcolor{white}{#1}}}\vspace{-1em}}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0.1\baselineskip}{\baselineskip}
+
+\renewcommand{\familydefault}{\sfdefault}
+\begin{document}
+\centering
+{\fontsize{25}{70}\selectfont Cessna 172}
+\break
+{\fontsize{20.74}{70}\selectfont Quick Reference Checklist}
+\break
+\color{Red}
+{\fontsize{10}{70}\selectfont For simulation use only, not for real world flight}
+
+\color{Black}
+\begin{multicols*}{2}
+\section*{PREFLIGHT}
+Ignition Switch\dotfill OFF\\
+Avionics Power Switch\dotfill OFF\\
+Master Switch\dotfill ON\\
+Fuel Quantity Indications\dotfill CHECK QUANTITY\\
+Master Switch\dotfill OFF\\
+Empennage Control Surfaces\dotfill CHECK\\
+Ailerons\dotfill CHECK\\
+\section*{BEFORE STARTING ENGINE}
+Preflight Inspection\dotfill COMPLETE\\
+Fuel Selector\dotfill BOTH\\
+Avionics, Autopilot, Electrical\dotfill OFF\\
+Brakes\dotfill TEST and SET\\
+Circuit Breakers\dotfill CHECK IN\\
+\section*{STARTING ENGINE}
+Mixture\dotfill RICH\\
+Carburetor Heat\dotfill COLD\\
+Master Switch\dotfill ON\\
+Prime\dotfill AS REQUIRED\\
+Throttle\dotfill OPEN 1/8 INCH\\
+Propeller Area\dotfill CLEAR\\
+Ignition Switch\dotfill START\\
+Oil Pressure\dotfill CHECK
+\section*{BEFORE TAKEOFF}
+Parking Brake\dotfill SET\\
+Flight Controls\dotfill FREE and CORRECT\\
+Flight Instruments\dotfill SET\\
+Fuel Selector\dotfill BOTH\\
+Mixture\dotfill RICH (below 3000 feet)\\
+Elevator Trim and Rudder Trim\dotfill TAKEOFF\\
+Throttle\dotfill 1700 RPM\\
+\hspace*{6mm}Magnetos\dotfill CHECK (RPM drop should not exceed 125 RPM on either magneto or 50 RPM differential between magnets).\\
+\hspace*{6mm}Carburetor Heat\dotfill CHECK (for RPM drop)\\
+\hspace*{6mm}Engine Instruments and Ammeter\dotfill CHECK\\
+\hspace*{6mm}Suction Gage\dotfill CHECK\\
+Avionics Power Switch \dotfill CHECK\\
+Radios\dotfill SET\\
+Autopilot\dotfill OFF\\
+Air Conditioner\dotfill OFF\\
+Flashing Beacon, Navigation Lights, and/or Strobe Lights \dotfill ON as required\\
+Brakes\dotfill Release
+\section*{NORMAL TAKEOFF}
+Wing Flaps\dotfill UP\\
+Carburetor Heat\dotfill COLD\\
+Throttle\dotfill FULL OPEN\\
+Elevator Control\dotfill LIFT NOSE WHEEL (at 55 KIAS)\\
+Climb Speed\dotfill 70-80 KIAS
+\section*{SHORT FIELD TAKEOFF}
+Wing Flaps\dotfill UP\\
+Carburetor Heat\dotfill COLD\\
+Brakes\dotfill APPLY\\
+Throttle\dotfill FULL OPEN\\
+Mixture\dotfill RICH (above 3000 feet, LEAN to obtain maximum RPM)\\
+Brakes\dotfill RELEASE\\
+Elevator Control\dotfill SLIGHTLY TAIL LOW\\
+Climb Speed\dotfill 59 KIAS (until all obstacles are cleared)
+\vfill\null
+\section*{CLIMB}
+Airspeed\dotfill 70-85 KIAS\\
+Throttle\dotfill FULL OPEN\\
+Mixture\dotfill RICH (above 3000 feet, LEAN to obtain maximum RPM)\\
+\section*{CRUISE}
+Power\dotfill 2200-2700 RPM (no more than 75\% is recommended)\\
+Elevator and Rudder Trim\dotfill ADJUST\\
+Mixture\dotfill LEAN
+\section*{DESCENT}
+Mixture\dotfill ADJUST for smooth operation (full rich for idle power)\\
+Power\dotfill AS DESIRED\\
+Carburetor Heat\dotfill AS REQUIRED (to prevent carburetor icing)
+\section*{PRE-LANDING}
+Fuel Selector Valve\dotfill BOTH\\
+Mixture\dotfill RICH\\
+Carburetor Heat\dotfill ON (apply full heat before closing throttle)\\
+Autopilot\dotfill OFF\\
+Air Conditioner\dotfill OFF
+\section*{NORMAL LANDING}
+Airspeed\dotfill 60-70 KIAS (flaps UP)\\
+Wing Flaps\dotfill AS DESIRED (below 85 KIAS)\\
+Airspeed\dotfill 55-65 KIAS (flaps DOWN)\\
+Touchdown\dotfill MAIN WHEELS FIRST\\
+Landing Roll\dotfill LOWER NOSE WHEEL GENTLY\\
+Braking\dotfill MINIMUM REQUIRED
+\section*{SHORT FIELD LANDING}
+Airspeed\dotfill 60-70 KIAS (flaps UP)\\
+Wing Flaps\dotfill FULL DOWN (40°)\\
+Airspeed\dotfill 60 KIAS (until flare)\\
+Touchdown\dotfill MAIN WHEELS FIRST\\
+Braking\dotfill APPLY HEAVILY\\
+Wing Flaps\dotfill RETRACT
+\section*{BALKED LANDING}
+Throttle\dotfill FULL OPEN\\
+Carburetor Heat\dotfill COLD\\
+Wing Flaps\dotfill 20° (immediately)\\
+Climb Speed\dotfill 55 KIAS\\
+Wing Flaps\dotfill 10° (until all obstacles are cleared) RETRACT (after reaching a safe altitude and 60 KIAS)\\
+\section*{AFTER LANDING}
+Wing Flaps\dotfill UP\\
+Carburetor Heat\dotfill COLD\\
+\section*{SECURING AIRPLANE}
+Parking Brake\dotfill SET\\
+Avionics Power Switch, Electrical Equipment, Autopilot\dotfill OFF\\
+Mixture\dotfill IDLE CUT-OFF (pulled full out)\\
+Ignition Switch\dotfill OFF\\
+Master Switch\dotfill OFF
+\end{multicols*}
+\newpage
+\centering
+{\fontsize{20.74}{70}\selectfont Emergency Procedures Checklist}
+\break
+\color{Red}
+{\fontsize{10}{70}\selectfont For simulation use only, not for real world flight}
+
+\color{Black}
+\begin{multicols*}{2}
+\section*{ENGINE FAILURE DURING TAKEOFF}
+Throttle\dotfill IDLE\\
+Brakes\dotfill APPLY\\
+Wing Flaps\dotfill RETRACT\\
+Mixture\dotfill IDLE CUT-OFF\\
+Ignition Switch\dotfill OFF\\
+Master Switch\dotfill OFF
+\section*{ENGINE FAILURE IMMEDIATELY AFTER TAKEOFF}
+Airspeed\dotfill 65 KIAS (flaps UP)\\
+\dotfill 60 KIAS (flaps DOWN)\\
+Mixture\dotfill IDLE CUT-OFF\\
+Ignition Switch\dotfill OFF\\
+Wing Flaps\dotfill AS REQUIRED\\
+Master Switch\dotfill OFF
+\section*{ENGINE FAILURE DURING FLIGHT}
+Wing Flaps\dotfill 20°\\
+Airspeed\dotfill 60 KIAS\\
+Selected Field\dotfill FLY OVER, noting terrain and obstructions, then retract flaps upon reaching a safe altitude and airspeed\\
+Avionics Power Switch and Electrical Switches\dotfill OFF\\
+Wing Flaps\dotfill 40° (on final approach)\\
+Airspeed\dotfill 60 KIAS\\
+Master Switch\dotfill OFF\\
+Touchdown\dotfill SLIGHTLY TAIL LOW\\
+Ignition Switch\dotfill OFF\\
+Brakes\dotfill  APPLY HEAVILY
+\section*{DITCHING}
+Radio\dotfill TRANSMIT MAYDAY on 121.5 MHz, giving location and intentions\\
+Heavy Objects (in baggage area)\dotfill SECURE OR JETTISON\\
+Approach\dotfill High Winds, Heavy Seas\dotfill INTO THE WIND\\
+\hspace*{6mm}Light Winds, Heavy Swells\dotfill PARALLEL TO SWELLS\\
+Wing Flaps\dotfill 20° - 40°\\
+Power\dotfill ESTABLISH 300 FT/MIN DESCENT AT 55 KIAS.\\
+\centering \textbf{NOTE}:
+If no power is available, approach at 65 KIAS with flaps up or at 60 KIAS with 10° flaps\\
+Touchdown\dotfill LEVEL ATTITUDE AT ESTABLISHED RATE OF DESCENT
+\section*{FIRE DURING START ON GROUND}
+Cranking\dotfill CONTINUE, to get a start which would suck the flams and accumulated fuel through the carburetor and into the engine\\
+\textbf{If engine starts:}\\
+Power\dotfill 1700 RPM for a minutes\\
+Engine\dotfill SHUTDOWN and inspect for damage\\
+\textbf{If engine fails to start:}\\
+Throttle\dotfill FULL OPEN\\
+Mixture\dotfill IDLE CUT-OFF\\
+Cranking\dotfill CONTINUE\\
+Engine\dotfill SECURE\\
+\hspace*{6mm}Master Switch\dotfill OFF\\
+\hspace*{6mm}Ignition Switch\dotfill OFF\\
+\hspace*{6mm}Fuel Selector Valve\dotfill OFF\\
+Fire\dotfill EXTINGUISH using fire extinguisher\\
+Fire Damage\dotfill INSPECT, repair damage or replace damaged components or wiring before conducting another flight
+\vfill\null
+\section*{ENGINE FIRE IN FLIGHT}
+Mixture\dotfill IDLE CUT-OFF\\
+Fuel Selector Valve\dotfill OFF\\
+Master Switch\dotfill OFF\\
+Cabin Heat and Air\dotfill OFF (except overhead vents)\\
+Airspeed\dotfill 100 KIAS (If fire is not extinguished, increase glide speed to find an airspeed which iwill provide an incombustible mixture)\\
+Forced Landing\dotfill EXECUTE (as described in Emergency Landing Without Engine Power)
+\section*{ELECTRICAL FIRE IN FLIGHT}
+Master Switch\dotfill OFF\\
+Avionics Power Switch\dotfill OFF\\
+All Other Switches (except ignition switch)\dotfill OFF\\
+Vents/Cabin Air/Heat\dotfill CLOSED\\
+Fire Extinguisher\dotfill ACTIVATE\\
+\centering \textbf{WARNING}\\
+After discharging an extinguisher within a closed cabin, ventilate the cabin.\\
+If fire appears out and electrical power is necessary for continuance of flight:\\
+Master Switch\dotfill PM\\
+Circuit Breakers\dotfill CHECK for faulty circuit, do not reset\\
+Radio Switches\dotfill OFF\\
+Avionics Power Switch\dotfill ON\\
+Radio/Electrical Switches\dotfill ON one at a time, with delay after each until short circuit is localized\\
+Vents/Cabin Air/Heat\dotfill OPEN when it is ascertained that fire is completely extinguished
+\section*{CABIN FIRE}
+Master Switch\dotfill OFF\\
+Vents/Cabin Air/Heat\dotfill CLOSED (to avoid drafts)\\
+Fire Extinguisher\dotfill ACTIVATE (if available)\\
+\centering \textbf{WARNING}\\
+After discharging an extinguisher within a closed cabin, ventilate the cabin.\\
+Land the airplane as soon as possible to inspect for damage
+\section*{WING FIRE}
+Navigation Light Switch\dotfill OFF\\
+Pitot Heat Switch\dotfill OFF\\
+Strobe Light Switch\dotfill OFF\\
+\centering \textbf{NOTE}:
+Perform a sideslip to keep the flames away from the fuel tank and cabin, and land as soon as possible using flaps only as required for final approach and touchdown
+\section*{STATIC SOURCE BLOCKAGE}
+Alternate Static Source Valve\dotfill PULL ON
+\section*{LANDING WITH A FLAT MAIN TIRE}
+Approach\dotfill NORMAL\\
+Touchdown\dotfill GOOD TIRE FIRST, hold airplane off flat tire as long as possible
+\section*{OVER-VOLTAGE LIGHT ILLUMINATES}
+Avionics Power Switch\dotfill OFF\\
+Master Switch\dotfill OFF (both sides)\\
+Master Switch\dotfill ON\\
+Over-Voltage Light\dotfill OFF\\
+Avionics Power Switch\dotfill ON
+If over-voltage light illuminates again:
+Flight\dotfill TERMINATE as soon as possible
+\section*{AMMETER SHOWS DISCHARGE}
+Alternator\dotfill OFF\\
+Nonessential Radio/Electrical Equipment\dotfill OFF\\
+Flight\dotfill TERMINATE as soon as practical
+\end{multicols*}
+\newpage
+\centering
+{\fontsize{20.74}{70}\selectfont Icing Checklist}
+\break
+\color{Red}
+{\fontsize{10}{70}\selectfont For simulation use only, not for real world flight}
+\color{Black}
+\section*{INADVERTENT ICING ENCOUNTER}
+\begin{flushleft}
+Turn pitot heat switch ON.\\
+Turn back or change altitude to obtain an outside air temperature that is less conducive to icing.\\
+Pull cabin heat control full out and open defroster outlet to obtain maximum windshield defroster heat and airflow.\\
+Open the throttle to increase engine speed and minimize ice buildup on propeller blades.\\
+Watch for signs of carburetor air filter ice and apply carburetor as required. An unexplained loss in engine speed could be caused by carburetor ice or air intake filter ice. Lean the mixture for maximum RPM, if carburetor heat is used continuously.\\
+Plan a landing at the nearest airport. With an extremely rapid ice build-up, select a suitable "off airport" landing site.\\
+With an ice accumulation of 1/4 ionch or more on the wing leading edges, be prepared for significantly higher stall speed.\\
+Leave wing flaps retracted. With a severe ice build-up on the horizontal tail, the change in wing wake airflow direction caused by wing flap extension could result in a loss of elevator effectiveness.\\
+Open left window and, if practical, scrape ice from a portion of the windshield for visibility in the landing approach.\\
+Perform a landing approach using a forward slip, if necessary, for improved visibility.\\
+Apprach at 65 to 75 KIAS depending upon the amount of the accumulation.\\
+Perform a landing in level attitude.
+\end{flushleft}
+\end{document}

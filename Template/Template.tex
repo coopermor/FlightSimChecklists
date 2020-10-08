@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[margin=0.1in]{geometry}
+\usepackage[explicit]{titlesec}
+\usepackage{xcolor}
+\usepackage{multicol}
+
+\definecolor{Red}{rgb}{1,0,0}
+\definecolor{Black}{rgb}{0,0,0}
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{}{0em}{\colorbox{black}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\textcolor{white}{\thesection\quad#1}}}\vspace{-1em}}
+\titleformat{name=\section,numberless}
+{\normalfont\normalsize\bfseries}{}{0em}{\colorbox{black}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\textcolor{white}{#1}}}\vspace{-1em}}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0.1\baselineskip}{\baselineskip}
+
+\renewcommand{\familydefault}{\sfdefault}
+\begin{document}
+\centering
+{\fontsize{25}{70}\selectfont Aircraft}
+\break
+{\fontsize{20.74}{70}\selectfont Quick Reference Checklist}
+\break
+\color{Red}
+{\fontsize{10}{70}\selectfont For simulation use only, not for real world flight}
+
+\color{Black}
+\begin{multicols*}{2}
+\section*{PREFLIGHT}
+\section*{BEFORE STARTING ENGINE}
+\section*{STARTING ENGINE}
+\section*{BEFORE TAKEOFF}
+\section*{TAKEOFF}
+\section*{CLIMB}
+\section*{CRUISE}
+\section*{DESCENT}
+\section*{PRE-LANDING}
+\section*{LANDING}
+\section*{AFTER LANDING}
+
+\end{multicols*}
+\newpage
+\centering
+{\fontsize{20.74}{70}\selectfont Emergency Procedures Checklist}
+\break
+\color{Red}
+{\fontsize{10}{70}\selectfont For simulation use only, not for real world flight}
+\begin{multicols*}{2}
+\section*{ENGINE FAILURE DURING TAKEOFF}
+\end{multicols*}
+\end{document}
