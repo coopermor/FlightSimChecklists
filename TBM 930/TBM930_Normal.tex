@@ -1,0 +1,232 @@
+\documentclass{article}
+\usepackage[margin=0.1in]{geometry}
+\usepackage[explicit]{titlesec}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{mathabx}
+
+\definecolor{Red}{rgb}{1,0,0}
+\definecolor{Orange}{rgb}{.92,.57,.12}
+\definecolor{Black}{rgb}{0,0,0}
+\definecolor{White}{rgb}{1,1,1}
+\definecolor{Green}{rgb}{.3,.73,.16}
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{}{0em}{\colorbox{black}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\textcolor{white}{\thesection\quad#1}}}\vspace{-1em}}
+\titleformat{name=\section,numberless}
+{\normalfont\normalsize\bfseries}{}{0em}{\colorbox{black}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\textcolor{white}{#1}}}\vspace{-1em}}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0.1\baselineskip}{\baselineskip}
+
+\renewcommand{\familydefault}{\sfdefault}
+\begin{document}
+\begin{center}
+    {\fontsize{25}{70}\selectfont Daher TBM 930}
+    \break
+    {\fontsize{20.74}{70}\selectfont Quick Reference Checklist}
+    \break
+    \color{Red}
+    {\fontsize{10}{70}\selectfont For simulation use only, not for real world flight}
+\end{center}
+\vspace{-2em}
+\color{Black}
+\begin{multicols*}{2}
+\section*{INSIDE INSPECTION}
+EXT. LIGHTS\dotfill OFF\\
+INT. LIGHTS\dotfill OFF\\
+CRASH LEVER\dotfill DOWN\\
+STARTER\dotfill OFF\\
+IGNITION\dotfill AUTO\\
+AUX BP\dotfill OFF\\
+FUEL SEL\dotfill MAN\\
+AP / TRIMS\dotfill OFF\\
+A/C\dotfill OFF\\
+CB LIGHTS\dotfill OFF\\
+DE-ICE SYSTEMS\dotfill ALL OFF\\
+INERT SEP\dotfill OFF\\
+PARKING BRAKE\dotfill ON\\
+BLEED\dotfill OFF\\
+THROTTLE\dotfill CUT OFF\\
+FUEL TANK SELECTOR\dotfill OPEN / L or R\\
+CIRCUIT BREAKERS\dotfill  ALL IN
+\section*{BEFORE STARTING ENGINE}
+CRASH LEVER\dotfill UP\\
+SOURCE\dotfill BAT or GPU\\
+GENERATOR\dotfill MAIN\\
+AUDIO ALARMS\dotfill TEST\\
+DE-ICE SYSTEM LIGHTS\dotfill TEST\\
+LANDING GEAR LIGHTS / CHECK DOWN\dotfill TEST\\
+MFD\dotfill INITIALIZED\\
+FUEL ON BOARD\dotfill CHECK\\
+RESIDUAL ITT (monitoring if ITT $>$ 150° C)\dotfill CHECK\\
+VOLTAGE: BAT $>$ 24.5 V / GPU {\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}} 28 V \dotfill CHECK\\
+CAS\dotfill CHECK
+\section*{ENGINE START}
+IGNITION\dotfill AUTO
+AUX BP\dotfill ON
+CAS MESSAGE \colorbox{Black}{\color{Orange}AUX BOOST PMP ON}\dotfill CHECK\\
+PROPELLER AREA\dotfill CLEAR\\
+NG 13\%: THROTTLE\dotfill LO-IDLE\\
+\hspace*{6mm} Monitor ITT\quad\color{Orange}Max 870° for 20 seconds / 1000° for 5 seconds\color{Black}\\
+\hspace*{6mm} Monitor NG\quad\color{Orange}30\% before 30 seconds / 50\% before 1 minute\color{Black}\\
+\hspace*{6mm} Monitor OIL\quad Press. / Temp\\
+NG 52\% ($\pm$ 2\%) : (1 minute MAX)
+\hspace{6mm}OFF AUTOMATIC STARTER\dotfill CHECK
+\section*{AFTER ENGINE START WITH GPU}
+SOURCE SELECTOR\dotfill BAT\\
+GPU\dotfill DISCONNECTED\\
+CAS MESSAGE \colorbox{Black}{\color{Orange}GPU DOOR}\dotfill OFF
+\section*{AFTER ENGINE START}
+THROTTLE\dotfill LO IDLE$\blacktriangleright$FLIGHT IDLE\\
+NG 70\% ($\pm$ 2\%)\dotfill CHECK\\
+OIL PRESS. / TEMP\dotfill CHECK\\
+AUX BP\dotfill AUTO\\
+FUEL SEL\dotfill AUTO\\
+FUEL SEL SHIFT BUTTON\dotfill TEST\\
+AP / TRIMS\dotfill ON\\
+GENERATOR\dotfill ST-BY / TEST\\
+GENERATOR\dotfill MAIN\\
+CAS\dotfill CHECK\\
+A/C\dotfill AS REQUIRED\\
+BLEED\dotfill AUTO or MAX DIFF
+\vfill\null
+\section*{BEFORE TAXIING}
+STAND-BY INSTRUMENTS\dotfill CHECK\\
+MFD\\
+\hspace*{6mm} FPL\dotfill SET
+\hspace*{6mm} LFE\dotfill SET / CHECK
+\hspace*{6mm} WX RADAR \dotfill SBY
+DE-ICE SYSTEMS\dotfill TEST\\
+INERT SEP\dotfill ON\\
+FLIGHT CONTROLS\dotfill CHECK\\
+TRIM\dotfill TEST\\
+FLAPS\dotfill UP\\
+THROTTLE\dotfill FEATHER TWICE\\
+EIS\dotfill CHECK\\
+CAS\dotfill CHECK
+\section*{BEFORE LINE UP}
+LDG LIGHTS\dotfill ON\\
+STROBES\dotfill ON\\
+IGNITION (AUTO or ON)\dotfill AS REQUIRED\\
+AUX BP\dotfill  AUTO\\
+FUEL SEL\dotfill AUTO\\
+DE-ICE SYSTEMS\dotfill AS REQUIRED\\
+PITOT L / PITOT R \& STALL HTR\dotfill ON\\
+INERT SEP \dotfill AS REQUIRED\\
+TRIM\dotfill TO\\
+FLAPS\dotfill TO\\
+A/C\dotfill AS REQUIRED\\
+BLEED\dotfill AUTO or MAX DIFF\\
+LFE\dotfill CHECK\\
+FUEL GAUGES (IMBALANCE)\dotfill CHECK\\
+AMMETER $<$ \color{Red}50 amp\color{Black}\dotfill CHECK\\
+EIS\dotfill CHECK\\
+CAS\dotfill CHECK\\
+ALTIMETER SETTING\dotfill SET / CHECK\\
+INSTRUMENTS DEPARTURE SETTING\\
+\hspace*{6mm} SID (PROC)\dotfill SET
+\hspace*{6mm} ALT SEL\dotfill SET
+\hspace*{6mm} XPDR Squawk \dotfill SET
+\section*{TAKEOFF}
+ASI / HSI/ HEADINGS\dotfill CHECK\\
+PROP SPEED\dotfill GREEN SECTOR\\
+BRAKES\dotfill RELEASED\\
+TORQUE\dotfill 100\%\\
+ROTATION SPEED\dotfill PITCH UP : 10°\\
+POSITIVE VERTICAL SPEED\dotfill BRAKES / GEAR UP\\
+IAS $>$ 115 kts\dotfill FLAPS UP
+\section*{AFTER TAKEOFF}
+LANDING GEAR\dotfill UP\\
+FLAPS\dotfill UP\\
+TRQ MAX 100\%\dotfill CHECK\\
+EIS\dotfill CHECK\\
+CAS\dotfill CHECK\\
+DE-ICE SYSTEMS\dotfill AS REQUIRED\\
+INERT SEP\dotfill AS REQUIRED
+\vfill\null
+\section*{CLIMB}
+ALT SEL\dotfill CHECK\\
+ALTIMETER SETTING\dotfill AS REQUIRED\\
+AUTOPILOT\dotfill CHECK\\
+TORQUE ADJUSTMENT / ITT / NG\dotfill CHECK\\
+EIS\dotfill CHECK\\
+CAS\dotfill CHECK\\
+PRESSURIZATION\dotfill CHECK\\
+FUEL GAUGES\dotfill CHECK\\
+VOLTMETER / AMMETER\dotfill CHECK\\
+DE-ICE SYSTEMS\dotfill AS REQUIRED\\
+INERT SEP\dotfill AS REQUIRED\\
+LDG LIGHTS\dotfill AS REQUIRED
+\section*{CRUISE}
+ALTIMETERS SETTING\dotfill CHECK\\
+AUTOPILOT\dotfill CHECK\\
+TORQUE ADJUSTMENT / ITT / NG\dotfill CHECK\\
+EIS\dotfill CHECK\\
+CAS\dotfill CHECK\\
+PRESSURIZATION\dotfill CHECK\\
+FUEL GAUGES\dotfill CHECK\\
+VOLTMETER / AMMETER\dotfill CHECK\\
+DE-ICE SYSTEMS\dotfill AS REQUIRED\\
+INERT SEP\dotfill AS REQUIRED\\
+LDG LIGHTS\dotfill OFF
+\section*{BEFORE DESCENT}
+BRIEFING BEFORE APPROACH\dotfill COMPLETED\\
+ALTIMETER SETTING\dotfill CHECK\\
+PRESSURIZATION\dotfill CHECK\\
+LFE\dotfill CHECK\\
+FUEL GAUGES\dotfill CHECK\\
+VOLTMETER / AMMETER\dotfill CHECK\\
+DE-ICE SYSTEMS\dotfill AS REQUIRED\\
+INERT SEP\dotfill AS REQUIRED
+\section*{APPROACH}
+ALTIMETERS SETTING (QNH)\dotfill SET / CHECK\\
+MINIMUMS\dotfill SET / CHECK\\
+COM / NAV / GPS\dotfill SET / CHECK\\
+PRESSURIZATION\dotfill CHECK\\
+LFE\dotfill CHECK\\
+FUEL GAUGES\dotfill CHECK\\
+VOLTMETER / AMMETER\dotfill CHECK\\
+DE-ICE SYSTEMS\dotfill AS REQUIRED\\
+INERT SEP\dotfill AS REQUIRED\\
+LDG LIGHTS (below FL 100)\dotfill ON\\
+\section*{FINAL APPROACH (in GS) or Down Wind Leg (VMC)}
+LDG LIGHTS \dotfill ON\\
+INERT SEP\dotfill ON\\
+LANDING GEAR\dotfill DN - 3 GREEN\\
+FLAPS\dotfill TO
+\section*{SHORT FINAL ({\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}} 500 ft)}
+LANDING GEAR\dotfill DN - 3 GREEN\\
+FLAPS\dotfill LDG\\
+AP / YAW / DAMPER\dotfill OFF
+\vfill\null
+\section*{RUNWAY CLEAR}
+LDG LIGHTS\dotfill OFF\\
+TAXI LIGHT\dotfill ON\\
+DE-ICE SYSTEMS\dotfill OFF\\
+INERT SEP\dotfill ON\\
+TRIMS\dotfill RESET\\
+FLAPS\dotfill UP\\
+A/C\dotfill AS REQUIRED\\
+TRANSPONDER "GND" \dotfill CHECK\\
+RADAR "STAND BY"\dotfill CHECK
+\section*{SHUT-DOWN}
+PARKING BRAKE\dotfill SET\\
+EXT LIGHTS\dotfill OFF\\
+INT LIGHTS\dotfill AS REQUIRED\\
+OXYGEN MASTER SWITCH\dotfill OFF\\
+FUEL SEL\dotfill MAN\\
+AP TRIMS\dotfill OFF\\
+A/C\dotfill OFF\\
+BLEED\dotfill OFF\\
+THROTTLE\dotfill FLIGHT IDLE FOR 2 MIN\\
+THROTTLE\dotfill LO IDLE FOR 15 SEC\\
+THROTTLE\dotfill CUT OFF\\
+INERT SEP\dotfill OFF\\
+CAS MSG \colorbox{Black}{\color{Orange}AUX BOOST PMP ON}\dotfill CHECK\\
+AUX BP\dotfill OFF\\
+GENERATOR\dotfill OFF\\
+SOURCE (if INERT SEP retracted / {\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}} 40 sec)\dotfill OFF\\
+CRASH LEVER\dotfill DOWN\\
+STAND-BY INSTRUMENTS\dotfill OFF
+\end{multicols*}
+\end{document}

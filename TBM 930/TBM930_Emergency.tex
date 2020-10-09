@@ -1,0 +1,732 @@
+\documentclass{article}
+\usepackage[margin=0.1in]{geometry}
+\usepackage[explicit]{titlesec}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{mathabx}
+
+\definecolor{Red}{rgb}{1,0,0}
+\definecolor{Orange}{rgb}{.92,.57,.12}
+\definecolor{Black}{rgb}{0,0,0}
+\definecolor{White}{rgb}{1,1,1}
+\definecolor{Green}{rgb}{.3,.73,.16}
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}{}{0em}{\colorbox{black}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\textcolor{white}{\thesection\quad#1}}}\vspace{-1em}}
+\titleformat{name=\section,numberless}
+{\normalfont\normalsize\bfseries}{}{0em}{\colorbox{black}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\textcolor{white}{#1}}}\vspace{-1em}}
+\newcommand{\fly}{\vspace{-1em}\begin{center}\color{Green}FLY THE AIRPLANE\end{center}\vspace{-1em}}
+\newcommand{\warning}[1]{\colorbox{Black}{\color{Orange}{#1}}}
+\newcommand{\caution}[1]{\colorbox{Black}{\color{Red}{#1}}}
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0.1\baselineskip}{\baselineskip}
+
+\renewcommand{\familydefault}{\sfdefault}
+\begin{document}
+\begin{center}
+	{\fontsize{25}{70}\selectfont Daher TBM 930}
+    \break
+    {\fontsize{20.74}{70}\selectfont Emergency Procedures Checklist}
+    \break
+    \color{Red}
+    {\fontsize{10}{70}\selectfont For simulation use only, not for real world flight}
+\end{center}
+\vspace{-2em}
+\color{Black}
+\begin{multicols*}{2}
+\section*{ENGINE FAILURE AT TAKEOFF BEFORE ROTATION}
+Throttle\dotfill Flight IDLE\\
+Braking\dotfill As required\\
+Throttle\dotfill CUT OFF\\
+Tank Selector\dotfill OFF\\
+Crash lever\dotfill PULL DOWN
+\section*{OTHER REJECTED TAKEOFF}
+Throttle\dotfill Flight IDLE\\
+Reverse\dotfill As required\\
+Braking\dotfill As required\\
+Throttle\dotfill CUT OFF\\
+Tank Selector\dotfill OFF\\
+Crash lever\dotfill PULL DOWN
+\section*{ENGINE FAILURE}
+"MAN OVRD" control\dotfill FULL FORWARD\\
+If successful: Fly the airplane using the "MAN OVRD" control for power, set throttle to Flight IDLE and land as soon as possible\\
+If unsuccessful:\\
+\hspace*{6mm}"MAN OVRD" control\dotfill FULL BACKWARD\\
+If HEIGHT does not allow to choose a favorable runway or field, land straight ahead without changing landing gear position.\\
+Flaps\dotfill "TO" (Maintain IAS $>$ 100 KIAS)\\
+Throttle\dotfill "CUT OFF"\\
+Tank selector\dotfill "OFF"\\
+Before touchdown:
+Flaps\dotfill "LDG"\\
+Crash lever\dotfill PULL DOWN\\
+If HEIGHT allows to reach a favorable runway:\\
+Landing gear control\dotfill "DN"\\
+Flaps\dotfill AS REQUIRED\\
+Throttle\dotfill "CUT OFF"\\
+Tank selector\dotfill "OFF"\\
+Crash lever\dotfill PULL DOWN
+\section*{ENGINE FAILURE IN FLIGHT}
+Autopilot\dotfill DISCONNECT\\
+Tank selector\dotfill SWITCH TANKS\\
+"AUX BP" switch\dotfill CHECK / CORRECT\\
+If successful: Check remaining fuel and land as soon as possible\\
+In unsuccessful:\\
+Throttle\dotfill "CUT OFF"\\
+Oxygen mask\dotfill USE\\
+\vspace{-1em}
+\section*{\color{Red}OIL PRESS \color{White} OR \color{Orange}OIL PRESS}
+\vspace{1em}\fly
+Land as soon as possible\\
+Monitor the oil pressure\\
+Torque\dotfill MINIMUM NECESSARY\\
+If engine looses power:
+Throttle\dotfill "CUT OFF"\\
+Perform a forced landing
+\section*{\color{Orange}OIL TEMP}
+With or without: RED WARNING CAS MESSAGE \warning{OIL PRESS} ON\\
+Oil temperature indicator\dotfill CHECK\\
+If the indicated temperature is in the green sector:\\
+Land as soon as possible
+\fly
+Monitor\\
+If the indicated temperature is not in the green sector:\\
+Failure is confirmed, you can expect an OIL PRESSURE failure shortly\\
+If engine looses power:\\
+Throttle\dotfill "CUT OFF"\\
+Perform a FORCED LANDING
+\vfill\null
+\section*{ENGINE REGULATION DISCREPANCY, POWER LOSS, THROTTLE CONTROL LOSS}
+Throttle\dotfill Flight IDLE\\
+Confirm engine still running\\
+Tank selector\dotfill SWITCH TANKS\\
+Check the no parameter exceeds allowed values\\
+"MAN OVRD" control\dotfill ACTUATED progressively to MINIMUM NECESSARY\\
+Continue flight, land as soon as possible\\
+Perform a normal landing without reverse\\
+Braking\dotfill AS REQUIRED\\
+If minimum power obtained is excessive:\\
+Reduce airspeed by setting airplane in nose-up attitude at IAS $<$ 178 KIAS\\
+"INERT SEP" switch\dotfill "ON"\\
+IF ITT $>$ 840° C: "INERT SEP" switch\dotfill "OFF"\\
+Landing Gear control\dotfill "DN"\\
+Flaps\dotfill "TO"\\
+Establish a long final or an ILS approach respecting IAS $<$ 178 KIAS\\
+When runway is assured: Fuel tank selector\dotfill "OFF"\\
+Throttle\dotfill "FEATHER" (If available and necessary to extend trajectory)\\
+Flaps\dotfill "LDG" as required (at IAS $<$ 122 KIAS)\\
+Land normally WITHOUT REVERSE\\
+Braking\dotfill AS REQUIRED
+\section*{GOVERNOR CONTROL NOT OPERATING}
+Continue the flight\\
+If N\textsubscript{P} $<$ 1960 RPM, do not perform a go-around and do not use the reverse
+\section*{EXCESSIVE PROPELLER ROTATION SPEED}
+Reduce the power and the airplane speed to avoid propeller rotation speeds higher than 2000 RPM\\
+Land as soon as possible\\
+Do not perform ago-around
+\section*{ENGINE DOES NOT STOP ON GROUND}
+Tank selector\dotfill "OFF"\\
+Wait for engine to sop due to lack of fuel in the pipes\\
+"GENERATOR" selector\dotfill "OFF"\\
+"SOURCE" selector\dotfill "OFF"\\
+Crash lever\dotfill PULL DOWN
+\section*{\color{Red}ITT \color{White}DURING ENGINE START}
+Starting procedure\dotfill ABORT
+\section*{\color{Red}ITT \color{White}AFTER ENGINE START}
+\vspace{1em}
+\fly
+REDUCE POWER to have ITT $<$ 840° C\\
+LAND AS SOON AS POSSIBLE
+\section*{\color{Orange}CHIP}
+LAND AS SOON AS PRACTICAL
+\fly
+Or DO NOT TAKE OFF\dotfill airplane is grounded
+\vfill\null
+\section*{AIR START PROCEDURES}
+Oxygen mask\dotfill USE\\
+"GENERATOR" Switch\dotfill "MAIN"\\
+"BLEED" Switch\dotfill "OFF"\\
+"A/C" Switch\dotfill "OFF"\\
+Electric Consumption\dotfill Reduce\\
+Tank selector\dotfill "L" or "R" checked\\
+"AUX BP" fuel switch\dotfill "L" or "R" checked\\
+"IGNITION" switch\dotfill "AUTO" or "ON"\\
+Throttle\dotfill  "CUT OFF"\\
+"STARTER" switch "ON", start timer\\
+\underline{When Ng around 13\%:}\\
+Throttle\dotfill LO / IDLE\\
+ITT and Ng\dotfill Monitor\\
+\underline{When Ng around 52\%:}\\
+Check starter is\dotfill "OFF" automatically\\
+Throttle\dotfill FLIGHT IDLE\\
+Throttle\dotfill As required\\
+Electrical Equipment\dotfill As required\\
+"AUX BP" Switch\dotfill "AUTO"\\
+"BLEED" switch\dotfill As required\\
+If necessary\dotfill EMERGENCY DESCENT\\
+If AIR START not successful\dotfill FORCED LANDING
+\section*{ENGINE FIRE ON GROUND}
+Throttle\dotfill "CUT OFF"\\
+"BLEED" switch\dotfill "OFF"\\
+"A/C" switch\dotfill "OFF"\\
+Brakes\dotfill AS REQUIRED\\
+Tank Selector\dotfill "OFF"\\
+Crash lever\dotfill PULL DOWN\\
+EVACUATE
+\section*{CABIN FIRE ON GROUND}
+Throttle\dotfill "CUT OFF"\\
+Crash lever\dotfill PULL DOWN\\
+Cabin extinguisher\dotfill AS REQUIRED\\
+EVACUATE
+\section*{ENGINE FIRE IN FLIGHT}
+\textbf{\underline{CAUTION}: \\NO AIR START ATTEMPT AFTER AN ENGINE FIRE}
+\fly
+Throttle\dotfill "CUT OFF"\\
+"AUX BP" fuel switch\dotfill "OFF"\\
+Tank Selector\dotfill "OFF"\\
+Oxygen mask\dotfill USE\\
+"BLEED" switch\dotfill "OFF"\\
+"A/C" switch\dotfill "OFF"\\
+If necessary\dotfill EMERGENCY DESCENT
+\section*{CABIN ELECTRICAL FIRE OR SMOKE DURING FLIGHT}
+\vspace{1em}
+\fly
+OXYGEN mask and GOGGLES\dotfill USE\\
+If the origin is known:\\
+Defective equipment circuit breaker\dotfill PULL\\
+Extinguisher\dotfill USE\\
+If the origin is unknown:\\
+"A/C" switch\dotfill "OFF"\\
+All unnecessary equipment\dotfill OFF\\
+Perform\dotfill EMERGENCY DESCENT\\
+If necessary\dotfill SMOKE ELIMINATION\\
+LAND as soon as possible
+\vfill\null
+\section*{SMOKE ELIMINATION}
+OXYGEN mask and GOGGLES\dotfill USE\\
+"BLEED" switch "OFF"\\
+"A/C" switch\dotfill "OFF"\\
+"DUMP" switch\dotfill ACTUATE\\
+Wait until the differential pressure drops\\
+"RAM AIR" control knob\dotfill PULL\\
+If smoke increases\dotfill PUSH\\
+LAND as soon as possible
+\section*{MAXIMUM RATE DESCENT}
+Throttle\dotfill Flight IDLE\\
+Oxygen mask\dotfill USE\\
+Pitch attitude -10° to -20°\\
+If smooth air:
+Flaps and Landing gear control\dotfill "UP"\\
+Speed\dotfill VMO = 266 KIAS\\
+If rough air or in case of structure problem:\\
+Speed\dotfill BELOW 178 KIAS\\
+Flaps\dotfill "UP"\\
+Landing gear control\dotfill "DN"
+\section*{MAXIMUM RANGE DESCENT}
+Oxygen mask\dotfill USE\\
+Throttle\dotfill "CUT OFF"\\
+Flaps and Landing gear control\dotfill "UP"\\
+Speed\dotfill 120 KIAS\\
+"DUMP" switch\dotfill ACTUATE\\
+"RAM AIR" control knob\dotfill PULL\\
+If VMC and non icing conditions are possible:\\
+"ESS BUS TIE" switch\dotfill Cover up then "EMER" position\\
+Prepare for\dotfill FORCED LANDING\\
+If VMC and non icing conditions are not possible\\
+All DE-ICE switches\dotfill "OFF"\\
+All light switches\dotfill "OFF"\\
+"BLEED" switch\dotfill "OFF"\\
+"A/C" switch\dotfill "OFF"\\
+"AUX BP" switch\dotfill "OFF"\\
+"FUEL SEL" switch\dotfill "MAN"\\
+"AP / TRIMS" switch\dotfill "OFF"\\
+"PFD 2" breaker\dotfill PULL\\
+"ADC 2" breaker\dotfill PULL\\
+"XPDR 2" breaker\dotfill PULL\\
+If icing conditions:\\
+\hspace*{6mm}"PITOT L HTR" switch\dotfill "ON"\\
+\hspace*{6mm}"WINDSHIELD" switch\dotfill ON\\
+Speed\dotfill ABOVE 135 KIAS\\
+If time permits:\\
+\hspace*{6mm}"PLUGS" breaker\dotfill PULL\\
+\hspace*{6mm}"AIR COND" breaker\\
+Prepare a forced landing
+\vfill\null
+\section*{FORCED LANDINGS}
+Throttle\dotfill "CUT OFF"\\
+Tank selector\dotfill "OFF"\\
+"AUX BP" switch\dotfill "OFF"\\
+"BLEED" and "A/C" switches\dotfill "OFF"\\
+"DUMP" switch\dotfill ACTUATE\\
+Maintain 120 KIAS of gliding speed until favorable ground approach\\
+If ground allows it:\\
+\hspace*{6mm} "ESS BUS TIE" switch\dotfill "NORM" (to have GEAR and FLAPS available)\\
+\hspace*{6mm} Landing gear control\dotfill "DN"\\
+If night conditions:\\
+\hspace*{6mm} Lights\dotfill "LDG"\\
+If ground does not allow it:\\
+\hspace*{6mm} Landing gear\dotfill Keep "UP"\\
+\hspace*{6mm} Flaps\dotfill "LDG" (when chosen ground is assured)\\
+Crash lever\dotfill PULL DOWN\\
+Speed on final approach\dotfill 85 KIAS\\
+Land flaring out\\
+EVACUATE after stop
+\section*{TIRE BLOWOUT DURING LANDING}
+Control direction with brakes and nose wheel steering\\
+REVERSE\dotfill AS REQUIRED\\
+Stop airplane to minimize damages\\
+Perform ENGINE SHUT-DOWN
+\section*{FLAPS MALFUNCTION}
+FLAPS circuit breaker\dotfill PULL\\
+Flap contorl lever\dotfill "UP"\\
+Land as soon as possible maintaining airspeeds:\\
+\hspace*{6mm} IAS $\leq$ 178 KIAS for deflections between "UP" and "TO" positions\\
+\hspace*{6mm} IAS $\leq$ 122 KIAS for deflections greater than "TO" position\\
+For landing, refer to "LANDING WITH FLAPS MALFUNCTION"
+\section*{LANDING WITH FLAPS MALFUNCTION}
+For flaps deflections between "UP" and "TO":
+\hspace*{6mm} Proceed as for a normal landing with 105 KIAS of approach speed\\
+\hspace*{6mm} Provide for a landing distance increased by 60\%\\
+For flaps deflections greater than "TO":
+\hspace*{6mm} Proceed as for a normal landing with 100 KIAS of approach speed\\
+\hspace*{6mm} Provide for a landing distance increased by 50\%
+\section*{LANDING GEAR RETRACTION DISCREPANCY}
+\warning{GEAR UNSAFE} CAS message and "GEAR UNSAFE" red warning light ON or amber light flashing and 3 green lights OFF\\
+Maintain IAS below 150 KIAS\\
+"LDG GEAR" circuit breaker\dotfill PULL\\
+If \warning{GEAR UNSAFE} CAS message and "GEAR UNSAFE" red warning light are off:
+\hspace*{6mm} The flight may be continued without any restriction\\
+If not:\\
+\hspace*{6mm} "LDG GEAR" circuit breaker\dotfill PUSH\\
+Refer to "EMERGENCY GEAR EXTENSION"
+\section*{LANDING GEAR EXTENSION DISCREPANCY}
+\warning{GEAR UNSAFE} CAS message and "GEAR UNSAFE" red warning light ON or amber light flashing and 3 green lights OFF\\
+Maintain IAS below 150 KIAS\\
+Refer to "EMERGENCY GEAR EXTENSION"
+\vfill\null
+\section*{EMERGENCY GEAR EXTENSION}
+Maintain IAS below 150 KIAS\\
+Landing gear control\dotfill "DN"\\
+"LDG GEAR" circuit breaker\dotfill PULL\\
+Floor hatch\dotfill OPEN\\
+By-pass selector\dotfill FULLY PULL / LOCKED\\
+Hand pump\dotfill ACTUATE with maximum amplitude\\
+Press the CAS MASTER WARNING push-button to reset the \warning{GEAR UNSAFE} CAS message\\
+If "GEAR UNSAFE" red warning light is not illuminated and 3 green lights are illuminated:\\
+\hspace*{6mm} Continue flight if necessary BELOW 178 KIAS, exit and/or remaining outside icing conditions
+\section*{LANDING WITH UNLOCKED MAIN LANDING GEAR}
+"BLEED" switch\dotfill OFF\\
+"DUMP" switch\dotfill ACTUATED\\
+Maintain tank selector on defective landing gear side to lighten corresponding wing [maximum fuel unbalance 15 USG (57 liters)]\\
+Choose a runway with headwind or crosswind blowing from defective gear side\\
+Align the airplane to land on the runway edge opposite to the defective landing gear\\
+Do a normal approach at 90 KIAS, flaps on "LDG"\\
+Land and set nose gear immediately on ground to assure lateral control\\
+Use full aileron during roll-out to lift the wing with the defective landing gear\\
+Preferably do not use reverse\\
+Complete taxiing with a slight turn toward defective landing gear\\
+Throttle\dotfill "CUT OFF"\\
+Engine stop procedure\dotfill COMPLETE\\
+EVACUATE\\
+If landing gear drags during landing:\\
+\hspace*{6mm} Throttle\dotfill "CUT OFF"\\
+\hspace*{6mm} Crash lever\dotfill PULL DOWN\\
+\hspace*{6mm} Tank selector\dotfill "OFF"\\
+\hspace*{6mm} EVACUATE after airplane comes to a stop
+\section*{LANDING WITH DEFECTIVE NOSE LANDING GEAR (DOWN UNLOCKED OR NOT DOWN)}
+Approach\dotfill Flaps "LDG"\\
+Airspeed\dotfill 90 KIAS\\
+Land with nose-up attitude, keep nose high\\
+Throttle\dotfill "CUT OFF"\\
+Touch-down slowly with nose wheel and keep elevator at nose-up stop\\
+Moderate braking\\
+Crash lever\dotfill PULL DOWN\\
+EVACUATE after airplane comes to a stop
+\section*{LANDING WITH GEAR UP}
+Final approach\dotfill Standard\\
+Flaps\dotfill "LDG"\\
+Airspeed\dotfill 85 KIAS\\
+"BLEED" switch\dotfill "OFF"\\
+"DUMP" switch\dotfill ACTUATE\\
+When runway is assured:\\
+Throttle\dotfill "CUT OFF"\\
+Tank selector\dotfill "OFF"\\
+Flare out\\
+After touch-down, crash lever\dotfill PULL DOWN\\
+EVACUATE after airplane comes to a stop
+\vfill\null
+\section*{DITCHING}
+Landing gear\dotfill "UP"\\
+In heavy swell with light wind, land parallel to the swell (rollers).\\
+In heavy wind, land facing wind.\\
+Flaps\dotfill "LDG"\\
+Maintain a descent rate as low as possible when approaching the water\\
+Airspeed\dotfill IAS$\geq$85 KIAS\\
+"BLEED" switch\dotfill "OFF"\\
+"DUMP" switch\dotfill ACTUATE\\
+Crash lever\dotfill PULL DOWN\\
+Maintain attitude without rounding off until touch-down\\
+EVACUATE through EMERGENCY EXIT
+\section*{LANDING WITHOUT ELEVATOR CONTROL}
+Landing gear\dotfill "DN"\\
+Flaps\dotfill "LDG"\\
+Power as necessary to maintain airspeed according to an easy approach slope $\approx$300 ft / min\\
+Adjust elevator by using manual pitch trim wheel\\
+When ground approaches, decrease slope progressively\\
+Reduce power progressively\\
+\section*{\color{Red}FLAPS ASYM}
+\vspace{1em}
+\fly
+FLAPS circuit breaker\dotfill PULL\\
+FLAPS control lever\dotfill "UP"\\
+LAND as soon as possible maintaining airspeeds:
+\hspace*{6mm}IAS $\leq$ 178 KIAS for deflections between "UP" and "TO" positions\\
+\hspace*{6mm}IAS $\leq$ 122 KIAS for deflections greater than "TO" position\\
+For landing, refer to "LANDING WITH FLAPS MALFUNCTION"
+\section*{\color{Red}FUEL PRESS}
+\vspace{1em}
+\fly
+Remaining fuel\dotfill CHECK\\
+Tank selector\dotfill SWITCH TANKS\\
+"AUX BP" fuel switch\dotfill "AUTO"
+If \warning{FUEL PRESS} remains ON\\
+"AUX BP" fuel switch\dotfill "ON"\\
+Check message \caution{AUX BOOST PMP ON}\\
+Maintain "AUX BP" fuel switch\dotfill "ON"\\
+{\color{Green}LAND AS SOON AS PRACTICAL}\\
+If \warning{FUEL PRESS} remains ON\\
+\hspace*{6mm} Tank selector\dotfill SWITCH TANKS\\
+\warning{FUEL PRESS} is OFF, a supply problem may have occurred from the tank selected first\\
+If \warning{FUEL PRESS} remains ON\\
+\hspace*{6mm} Fullest tank\dotfill SELECT\\
+Avoid high power and rapid movements of the throttle\\
+Descent to an altitude below 18000 ft\\
+LAND as soon as possible
+\fly
+
+\section*{\color{Orange}AUX BOOST PMP ON}
+\vspace*{1em}\fly
+If "AUX BP" fuel switch is in "AUTO" position:\\
+\hspace*{6mm} RESET to\dotfill "ON"\\
+\hspace*{6mm} THEN to "AUTO"\\
+If \warning{AUX BOOST PUMP ON} \underline{GOES OFF:}
+\vspace{-1em}
+\begin{center}
+    \color{Green}Continue the flight normally
+\end{center}
+\vspace{-.5em}
+If \warning{AUX BOOST PUMP ON} \underline{remains ON,} mechanical booster pump has failed\\
+\hspace*{6mm} "AUX BP" fuel switch\dotfill "ON"\\
+\hspace*{6mm} LAND AS SOON AS POSSIBLE
+\vfill\null
+\section*{\color{Orange}FUEL LOW L-R}
+Corresponding gage\dotfill CHECK\\
+Check the other tank has not been automatically selected\\
+If not:\\
+\hspace*{6mm}  "FUEL SEL" switch \dotfill "MAN"\\
+\hspace*{6mm} Select fuel tank manually\dotfill as required
+\begin{center}
+    \color{Green}FLY THE AIRPLANE\\CHECK MINIMUM FUEL\\
+    \color{Black}TAKE DECISION, land as soon as practical if necessary
+\end{center}
+\vspace{-1em}
+\section*{\color{Orange}AUTO SEL}
+\vspace{1em}\fly
+"FUEL SEL" switch\dotfill "AUTO"\\
+If it is on "AUTO", failure is confirmed\\
+"FUEL SEL" switch\dotfill "MAN"\\
+Select tanks manually as required\\
+\textbf{\underline{CAUTION:} MAXIMUM UNBALANCE IS 15 USG}
+\section*{\color{Orange}FUEL IMBALANCE}
+If "FUEL SEL" on "AUTO" mode\\
+\hspace*{6mm} SELECT the fullest tank\dotfill by pressing the "SHIFT" push-button\\
+If "FUEL SEL" on "MAN" mode\\
+\hspace*{6mm} SELECT the fullest tank\dotfill by shifting the tank selector manually
+\section*{LOW LVL FAIL L - R}
+CHECK\dotfill Fuel remaining in tanks\\
+MAKE DECISION\\
+If any doubt\dotfill LAND AS SOON AS PRACTICAL
+\vspace{-1em}
+\fly
+\vspace{-1em}
+\section*{\color{Orange}BAT OFF}
+"SOURCE" selector\dotfill "OFF"\\
+"SOURCE" selector\dotfill "BATT"\\
+If warning persists\dotfill Land as soon as possible\\
+Monitor airplane mains voltage
+\section*{\color{Orange}MAIN GEN}
+If necessary\dotfill CORRECT\\
+If warning persists\dotfill "MAIN GEN" switching confirmed\\
+"MAIN GENERATOR RESET" push-button\dotfill PUSH
+\fly
+Keep the following systems connected:
+\hspace*{6mm} A/P system
+\hspace*{6mm} Deicing systems except right windshield
+\hspace*{6mm} STROBE and NAV lights
+\hspace*{6mm} Cockpit emergency lights
+\hspace*{6mm} VHF 1
+\hspace*{6mm} NAV/GPS 1
+\hspace*{6mm} BLEED
+\hspace*{6mm} Landing lights on short final
+"GENERATOR" selector (RESET if necessary)\dotfill "ST-BY"\\
+Maintain ST-BY loads below 100A
+\section*{LOW VOLTAGE}
+Voltmeter voltages\dotfill CHECK\\
+If voltages are $<$ 26 Volts, monitor a possible drop or any indication of battery discharge\\
+In that case:
+\fly
+Keep the following systems connected:\\
+\hspace*{6mm} A/P system\\
+\hspace*{6mm} Deicing systems except right windshield\\
+\hspace*{6mm} STROBE and NAV lights\\
+\hspace*{6mm} Cockpit emergency lights\\
+\hspace*{6mm} VHF 1\\
+\hspace*{6mm} NAV/GPS 1\\
+\hspace*{6mm} BLEED\\
+\hspace*{6mm} Landing lights on short final\\
+"GENERATOR" selector (RESET if necessary)\dotfill "ST-BY"\\
+Maintain ST-BY loads below 100A
+\vfill\null
+\section*{\color{Orange}MAIN GEN \color{White}AND \color{Orange}LOW VOLTAGE}
+"GENERATOR" selector\dotfill "MAIN"\\
+"MAIN GENERATOR RESET" push-button\dotfill PRESS\\
+\vspace{-1em}\fly
+If successful:\\
+\hspace*{6mm} Disconnect ancillary electrical systems not essential\\
+\hspace*{6mm} Monitor voltmeter and ammeter\\
+Prepare to LAND AS SOON AS POSSIBLE\\
+If not successful:\\
+"GENERATOR" selector\dotfill "ST-BY"\\
+"ST-BY GENERATOR RESET" push-button\dotfill PRESS\\
+If successful:\\
+\hspace*{6mm} Disconnect ancillary electrical systems not essential\\
+\hspace*{6mm} Monitor voltmeter and ammeter\\
+Prepare to LAND AS SOON AS POSSIBLE\\
+If not successful, both generators failure is confirmed. If possible, return to VMC conditions\\
+"GENERATOR" selector\dotfill "OFF"\\
+If conditions allow: VMC and non icing conditions\\
+If altitude $\geq$ 10000 ft : "OXYGEN" switch\dotfill "ON"\\
+"ESS BUSS TIE" switch\dotfill Cover up, then "EMER" position\\
+In this configuration, only both "ESS BUS" bars and "BUS BATT" bar are directly supplied by the battery
+LAND as soon as possible\\
+If necessary, it is always possible to use other ancillary systems by selecting\\
+"ESS BUSS TIE" switch\dotfill "NORM"\\
+If conditions do not allow:\\
+Manually disconnect ancillary systems as follows:\\
+\hspace*{6mm} "AIRFRAME DE ICE" switch\dotfill "OFF"\\
+\hspace*{6mm} "ICE LIGHT" switch\dotfill "OFF"\\
+\hspace*{6mm} "PROP DE ICE" switch\dotfill "OFF"\\
+\hspace*{6mm} "WINDSHIELD" switch\dotfill "OFF"\\
+\hspace*{6mm} "PITOT R \& STALL HTR" switch\dotfill "OFF"\\
+\hspace*{6mm} "OFF/LDG/TAXI" light"PULSE" switches\dotfill "OFF"\\
+\hspace*{6mm} "STROBE" switch\dotfill "OFF"\\
+\hspace*{6mm} "BLEED" and "A/C" switches\dotfill "OFF"\\
+\hspace*{6mm} "AUX BP" switch\dotfill "OFF"\\
+\hspace*{6mm} "FUEL SEL" switch\dotfill "MAN"\\
+\hspace*{6mm} "AP / TRIMS" switch\dotfill "OFF"\\
+\hspace*{6mm} "PFD 2" breaker\dotfill "PULL"\\
+\hspace*{6mm} "ADC 2" breaker\dotfill "PULL"\\
+\hspace*{6mm} "TAS" breaker\dotfill "PULL"\\
+\hspace*{6mm} "DATA LINK" breaker\dotfill "PULL"\\
+\hspace*{6mm} "DIMMER / CABIN / ACCESS" controls\dotfill "OFF"\\
+\hspace*{6mm} "XPDR 2" breaker\dotfill "PULL"\\
+If icing conditions:\\
+\hspace*{6mm} "PITOT L HTR" switch\dotfill Checked "ON"\\
+\hspace*{6mm} "WINDSHIELD" switch\dotfill "ON"\\
+Maintain minimum recommended speeds into known icing conditions\\
+\begin{tabular}{|l|l|}
+    \hline
+    Flaps UP  & 135 KIAS \\ \hline
+    Flaps TO  & 110 KIAS \\ \hline
+    Flaps LDG & 90 KIAS  \\ \hline
+    \end{tabular}
+\break
+If time permits:\\
+\hspace*{6mm} "PLUGS" breakers\dotfill PULL\\
+\hspace*{6mm} "AIR COND" breaker\dotfill PULL\\
+LAND as soon as possible
+\section*{\color{Red}{ELEC FEATH FAULT}}
+\vspace{1em}
+\fly
+"FEATHER" circuit breaker\dotfill PULL\\
+LAND as soon as possible
+\vfill\null
+\section*{TOTAL LOSS OF ELECTRICAL POWER}
+Maintain airplane control\\
+Use the MD 302 for\dotfill attitude, airspeed and/or altitude
+\fly
+Land as soon as possible
+\section*{\color{Red}{BLEED TEMP}}
+\vspace{1em}
+\fly
+Should automatic cut off occur or not:\\
+If possible\dotfill REDUCED POWER\\
+"HOT AIR FLOW" distributor\dotfill turn to the right\\
+"A/C" switch\dotfill "PILOT"\\
+"TEMP" selector\dotfill Mini\\
+"BLEED" switch\dotfill "OFF"\\
+"BLEED" switch\dotfill "AUTO"\\
+If \caution{BLEED TEMP} and \warning{BLEED OFF} warnings till ON:\\
+\hspace*{6mm} Refer to "BLEED OFF"\\
+If \caution{BLEED TEMP} ON (No \warning{BLEED OFF}):\\
+\hspace*{6mm}Shorten the flight
+\section*{\color{Orange}{BLEED OFF}}
+USE OXYGEN MASK\\
+Check "BLEED" switch position and\dotfill CORRECT\\
+\vspace{-1em}
+If possible, reduce power\\
+\fly
+"BLEED" switch\dotfill "OFF"\\
+"BLEED" switch\dotfill "AUTO"\\
+If in flight:\\
+\hspace*{6mm} If warning \warning{BLEED OFF} still displayed\\
+\hspace*{6mm} If necessary\dotfill EMERGENCY DESCENT\\
+\hspace*{6mm} Continue flight\\
+If on the ground:\\
+\hspace*{6mm} "BLEED" switch\dotfill "OFF"\\
+\hspace*{6mm} Taxi back to the apron\\
+\hspace*{6mm} Normal engine shut-down
+\section*{\color{Red}{CABIN ALTITUDE} AND \warning{USE OXYGEN MASK}}
+Pressurization indicator\dotfill CHECK\\
+If cabin altitude $>$ 10000 ft:\\
+\vspace{-1em}
+OXYGEN\dotfill  USE OXYGEN MASK\\
+\fly
+"BLEED" switch\dotfill CHECK "AUTO"\\
+"DUMP" switch\dotfill CHECK UNDER GUARD\\
+"EMERGENCY RAM AIR" control knob\dotfill CHECK PUSHED\\
+If necessary\dotfill EMERGENCY DESCENT\\
+\section*{\color{Red}{CABIN ALTITUDE} AND \warning{USE OXYGEN MASK} AND \caution{EDM}}
+Pressurization indicator\dotfill CHECK\\
+If cabin altitude $>$ 10000 ft:\\
+\vspace{-.8em}
+OXYGEN\dotfill  USE OXYGEN MASK\\
+\fly
+\vspace{.2em}
+"BLEED" switch\dotfill CHECK "AUTO"\\
+"DUMP" switch\dotfill CHECK UNDER GUARD\\
+"EMERGENCY RAM AIR" control knob\dotfill CHECK PUSHED\\
+If necessary\dotfill EMERGENCY DESCENT\\
+\section*{\color{Red}{CABIN DIFF PRESS}}
+Pressurization indicator\dotfill CHECK\\
+If $\Delta$ 6.4$\pm$ 0.2 PSI:\\
+\hspace*{6mm} "BLEED" switch\dotfill "OFF"\\
+\hspace*{6mm} OXYGEN\dotfill USE, if necessary\\
+\vspace{-.8em}
+\fly
+\vspace{.4em}
+If necessary (no oxygen available)\dotfill EMERGENCY DESCENT\\
+\section*{CABIN NOT DEPRESSURIZED AFTER LANDING}
+"DUMP" switch\dotfill ACTUATED\\
+"BLEED" switch\dotfill "OFF"\\
+"EMERGENCY RAM AIR" control knob\dotfill PULLED if necessary\\
+Wait for complete cabin depressurization before opening the door
+\vfill\null
+\section*{VACUUM LOW}
+\textbf{MONITOR}\\
+If necessary, fly to an altitude $\leq$ 10000 ft and return to VMC conditions as soon as
+possible.
+\fly
+"BLEED" switch\dotfill "OFF"
+\section*{LEADING EDGES DEICING FAILURE}
+LEAVE icing conditions as soon as possible\\
+"AIRFRAME DE ICE" switch\dotfill "OFF"
+\section*{\color{Orange}{PROP DEICE FAIL}}
+REDUCE power
+\fly
+ACTUATE throttle\dotfill to vary RPM within operating range\\
+LEAVE icing conditions\dotfill as soon as possible
+\section*{\color{Orange}{INERT SEP FAIL}}
+LEAVE icing conditions\dotfill as soon as possible
+\fly
+\section*{WINDSHIELD DEICING FAILURE}
+"WINDSHIELD" switch \dotfill "OFF" / "ON" when necessary\\
+In case of total failure:\\
+"TEMP" selector\dotfill Max warm\\
+"HOT AIR FLOW" distributor\dotfill turn to the left\\
+Before landing wait for a sufficient visibility
+\section*{WINDSHIELD MISTING OR INTERNAL ICING}
+"TEMP" selector\dotfill Set to 12 o'clock position\\
+"HOT AIR FLOW" distributor\dotfill turn to the left\\
+"WINDSHIELD" switch\dotfill "ON"\\
+If not successful, to gain sufficient visibility:\\
+"HOT AIR FLOW" distributor\dotfill fully turn to the left\\
+Manually clean a sufficient visibility area.\\
+If necessary, clean L.H. side window and conduct a sideslip approach (rudder pedals to the right) in order to get sufficient landing visual references.\\
+For landing with flaps "LDG", maintain\dotfill IAS $\geq$ 95 KIAS
+\section*{\color{Orange}{PITOT NO HT L-R}}
+\warning{PITOT NO HT L}\\
+Avoid icing conditions
+\fly
+If it is not possible:\\
+Perform moderate descent or climb attitudes, V\textsubscript{MO} overshoot and stall warning systems are always operating\\
+\warning{PITOT NO HT R}\\
+V\textsubscript{MO} overshoot warning may be altered by icing conditions
+
+\fly
+Monitor maximum airspeed\dotfill $\leq$ 266 KIAS
+\section*{STALL NO HEAT}
+MONITOR and MAINTAIN minimum airspeed according to airplane configuration and icing conditions
+\fly
+\section*{RUNAWAY OF TRIM}
+\vspace{1em}
+\fly
+"AP / TRIM DISC" push-button\dotfill PUSHED AND \underline{HELD}\\
+"AP / TRIMS" switch\dotfill RELEASED\\
+Pitch trim may be used manually
+Reduce airspeed if necessary to reduce control forces
+If pitch trim runaway
+"AP / TRIMS" switch\dotfill "AP OFF"\\
+If rudder or aileron trim runaway\\
+PULL circuit breaker\dotfill corresponding to the defective trim tab\\
+"AP / TRIMS" switch\dotfill "ON"\\
+\section*{CRACK IN COCKPIT WINDOW OR WINDOW PANEL}
+\vspace{1em}
+\fly
+DESCEND SLOWLY\\
+Reduce cabin $\Delta$P\dotfill by setting Landing Field Elevation to 10000 ft\\
+\vfill\null
+\section*{EMERGENCY EXIT USE}
+Check that the anti-theft safety pin has been removed\\
+Lift up the opening handle\\
+Pull emergency exit assembly toward oneself to release it from its recess\\
+Put the emergency exit door inside fuselage or throw it away from the fuselage through the opening\\
+EVACUATE airplane
+\section*{EMERGENCY BEACON (ELT) USE}
+On COM VHF 121.5 MHZ or on a known air traffic control frequency, transmit the "MAY DAY" signal if possible\\
+After landing:\\
+\hspace*{6mm} "ELT" remote control switch\dotfill "ON" (maintain it "ON" until aid arrives)
+\section*{INADVERTENT SPINS}
+"AP / TRIMS DISC" push-button\dotfill PRESS and HOLD until recovery\\
+Control wheel\dotfill NEUTRAL : PITCH ROLL\\
+Rudder\dotfill FULLY OPPOSED TO THE SPIN\\
+Throttle\dotfill FLIGHT IDLE\\
+Flaps\dotfill "UP"\\
+When rotation is stopped\\
+Level the winds and ease out of the dive
+\fly
+\section*{AP OFF, STALL WARNING}
+Fly the airplane, wings level and nose down until stall warning stops\\
+Power as required\\
+Return to the desired flight path
+\section*{\color{Red}USP ACTIVE}
+Do not disconnect AP\\
+Increase power up to 50 \% minimum\\
+Manage the flight
+\section*{AIRSPEED INDICATING SYSTEM FAILURE}
+"PITOT L HTR" switch\dotfill CHECK "ON"\\
+"PITOT R \& STALL HTR" switch\dotfill CHECK "ON"\\
+If symptoms persist:\\
+"ALTERNATE STATIC" selector\dotfill PULL THOROUGHLY
+\section*{\color{Orange}IGNITION}
+CHECK\dotfill "IGNITION" switch position\\
+If weather permits\dotfill correct by switching to "AUTO"
+\fly
+\section*{AUTOPILOT OR ELECTRIC PITCH TRIM MALFUNCTION}
+"AP / TRIM DISC" push-button\dotfill PRESSED and HELD\\
+"AP / TRIMS" switch\dotfill OFF\\
+"AP / TRIM DISC" push-button\dotfill RELEASED\\
+If necessary, control wheel\dotfill RETRIM
+\section*{MFD FAILURE}
+PFD1 display back-up button\dotfill Pressed\\
+MFD circuit breaker\dotfill Checked IN\\
+\end{multicols*}
+\end{document}
